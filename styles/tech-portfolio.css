@@ -1,0 +1,105 @@
+    /* Background Video Styling */
+    .background-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .background-container video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: auto;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      min-width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding-top: 80px;
+      color: #000;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+    .navbar {
+      height: 80px; /* Adjust height as needed */
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem; /* Adjust font size */
+    }
+
+
+    .navbar {
+      background: rgba(23, 23, 23, 0.5);
+      backdrop-filter: blur(5px);
+      height: 80px;
+      
+    }
+    .navbar {
+      background: linear-gradient(90deg, #ff6a00, #ffb940);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .navbar-nav .nav-link:hover {
+             color: #fff700 !important;
+        }
+    h2 {
+      text-align: center;
+      margin: 2rem auto;
+      font-family: 'Poppins', sans-serif;
+      padding: 15px;
+      border: 2px solid #ffdd00;
+      border-radius: 15px;
+      background-color: #f0f8ff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      width: fit-content;
+    }
+
+    .image-card {
+      perspective: 1000px;
+      transition: transform 0.6s ease;
+    }
+
+    .image-container {
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transform: rotateY(15deg);
+      opacity: 0;
+      transition: opacity 1s ease-out, transform 1s ease-out;
+      cursor: pointer;
+    }
+
+    .image-container.visible {
+      opacity: 1;
+      transform: rotateY(0deg);
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    .modal-backdrop.show {
+      background-color: rgba(0, 0, 0, 0.85);
+    }

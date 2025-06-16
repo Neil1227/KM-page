@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG 7: Affordable and Clean Energy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="path/to/your/sdg7-icon.png" type="image/png">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            line-height: 1.6;
+            padding-top: 60px;
+            text-align: center;
+        }
+        header {
+            background-color: #fcc30b;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: rgb(255, 255, 255);
+        }
+        .hero h2 {
+            color: #fcc30b;
+        }
+        header h1 { font-size: 1.8rem; }
+        .nav-links { display: flex; gap: 15px; align-items: center; }
+        .nav-links a, .home-button, .dropbtn, .nav-btn {
+            background-color: #ffffff;
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            overflow-y: auto;
+            max-height: 300px;
+        }
+        .dropdown:hover .dropdown-content { display: block; }
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .content-section {
+        text-align: justify;
+        margin-top: 2rem;
+        border: 3px solid #fcc30b; /* Adds a red border */
+        padding: 70px;
+        border-radius: 10px; /* Rounded corners */
+        background-color: #ffffff; /* Optional: makes text pop */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Optional: soft shadow */
+        }
+        .hero img { width: 100%; max-height: 700px; object-fit: cover; }
+        .content { padding: 20px; max-width: 800px; margin: auto; }
+        .nav-buttons { display: flex; justify-content: space-between; padding: 20px; }
+        footer { background: #fcc30b; color: white; padding: 10px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SDG 7: Affordable and Clean Energy</h1>
+        <div class="nav-links">
+            <div class="dropdown">
+                <div class="dropdown-content">
+                    <script>
+                        for (let i = 1; i <= 17; i++) {
+                            document.write(`<a href='sdg${i}.html'>SDG ${i}: ${sdgs[i - 1]}</a>`);
+                        }
+                    </script>
+                </div>
+            </div>
+            <a href="../Homepage.html"><button class="home-button">Home</button></a>
+        </div>
+    </header>
+    <div class="hero">
+        <img id="sdg-image" src="C:\Users\daryl\Desktop\WEBSITE\sdgs\SDGS banner\7.png" alt="SDG 7 Image">
+        <h2>Ensure Access to Affordable, Reliable, Sustainable, and Modern Energy for All</h2>
+    </div>
+    <div class="container">
+        <section class="content-section">
+            <p>
+                Pampanga State Agricultural University (PSAU) stands at the forefront of driving sustainable development, deeply committed to addressing SDG 1: No Poverty through research-driven programs, community empowerment, and agricultural innovations. Guided by its mandate, PSAU continuously explores the effectiveness of its initiatives in tackling poverty, food insecurity, and environmental stability—paving the way for inclusive growth and lasting change.</p>
+            <p>
+                One such study, conducted among local farmers, seeks to assess how well these programs fulfill their intended purpose. By gathering firsthand insights, PSAU identifies gaps, strengths, and areas for improvement, ensuring that interventions truly uplift farming communities. The research highlights practical solutions that enhance agricultural productivity, promote sustainable livelihoods, and build resilience against economic and environmental challenges.</p>
+            <p>
+                Through its continuous commitment to innovation and community engagement, PSAU reinforces its mission of empowering farmers—helping them break free from the cycle of poverty while fostering a more food-secure and sustainable future for all.</p>
+        </section>
+    <div class="nav-buttons">
+        <a id="prev-btn" href="sdg 6.html"><button class="nav-btn">Previous</button></a>
+        <a id="next-btn" href="sdg 8.html"><button class="nav-btn">Next</button></a>
+    </div>
+</body>
+</html>

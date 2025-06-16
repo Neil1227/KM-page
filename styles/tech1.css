@@ -1,0 +1,122 @@
+   /* Your full CSS remains the same */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffffff, #ff6a00);
+      margin: 0;
+    }
+    .navbar {
+      background: linear-gradient(90deg, #ff6a00, #ffb940);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      padding: 1rem 2rem;
+    }
+    .navbar-brand,
+    .navbar-nav .nav-link {
+      color: #ffffff !important;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #ff9900 !important;
+    }
+    .cards-container {
+      padding: 120px 40px 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+    .card {
+      width: 330px;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #ffffffdd;
+      border: none;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .comment-section {
+      background: #fff;
+      padding: 40px;
+      margin: 60px auto;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      max-width: 850px;
+    }
+    .comment-form input,
+    .comment-form textarea {
+      width: 100%;
+      padding: 14px 18px;
+      margin-bottom: 1.2rem;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    .comment-form button {
+      background: linear-gradient(90deg, #ff5100, #f8976b);
+      color: #fff;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+    .comment-form button:hover {
+      background: linear-gradient(90deg, #a63601, #fa7a3e);
+      transform: scale(1.05);
+    }
+    .comment {
+      background: #f8fbff;
+      padding: 16px;
+      border-radius: 12px;
+      margin-bottom: 14px;
+    }
+    .comment strong {
+      color: #333;
+    }
+    .reply {
+      margin-left: 20px;
+      font-size: 14px;
+      background: #eef4ff;
+      padding: 8px;
+      border-radius: 10px;
+      margin-top: 8px;
+    }
+    footer {
+      background: #121212;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+    }
+    .modal-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .modal-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    #prevBtn {
+      left: 10px;
+    }
+    #nextBtn {
+      right: 10px;
+    }

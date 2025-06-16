@@ -1,0 +1,154 @@
+       body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            color: #f8621b;
+            z-index: 1000;
+            font-size: 1.5rem;
+            font-weight: bold;
+            overflow: hidden;
+        }
+        .navbar {
+            background: linear-gradient(90deg, #494949, #979696);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+         }
+        .carousel-text {
+            display: flex;
+            overflow: hidden;
+            width: 200px;
+            height: 2.5rem;
+            position: relative;
+        }
+
+        .carousel-text span {
+            display: inline-block;
+            min-width: 100%;
+            text-align: center;
+            font-size: 2.2rem;
+            letter-spacing: 0.2em;
+            color: #f8621b;
+            animation: slideText 9s infinite;
+        }
+                .btn.two-tone {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #ff5100, #f8976b); /* Two-tone gradient */
+            border: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn.two-tone:hover {
+            background: linear-gradient(135deg, #a63601, #fa7a3e);
+            transform: scale(1.05);
+        }
+        @keyframes slideText {
+            0%, 20% { transform: translateX(0); }
+            33.33%, 53.33% { transform: translateX(-100%); }
+            66.66%, 86.66% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .hero-section video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: #ffffff;
+            max-width: 800px;
+            padding: 20px;
+            margin-top: 400px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 8px 8px 16px rgba(255, 127, 53, 0.6);
+        }
+
+        .hero-content p {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+        }
+
+        .hero-content .btn {
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            background-color: #f8621b;
+            border: none;
+            transition: transform 0.3s ease-in-out, background-color 0.3s;
+        }
+
+        .hero-content .btn:hover {
+            transform: scale(1.1);
+            background-color: #e64a1c;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+        }
+         /* Footer Styling */
+         footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            margin-top: auto;
+        }
