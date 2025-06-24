@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colorful Navbar</title>
+  
+  <!-- ✅ Import League Spartan from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'League Spartan', Arial, sans-serif;
+      background:none no-repeat;
+    }
+    .thin-heading {
+    text-align: center;
+    font-family: 'League Spartan', Arial, sans-serif;
+    font-weight: 300; /* Thin */
+    font-size: 1rem;
+    margin: 20px 0 10px 0;
+    color: #1c366a;
+    letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: #f85e0a;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 16px 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.15rem;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #1c366a;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+      <header>
+    <h2 class="thin-heading">Website Navigation Example</h2>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Technologies Research</a>
+    <a href="#">SDGs</a>
+    <a href="#">About</a>
+  </nav>
+
+</body>
+</html>

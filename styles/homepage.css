@@ -1,14 +1,156 @@
-        /* Navbar Styling */
-.animated-navbar {
-    animation: slideDown 1.2s ease-out;
-    position: absolute; /* Keep navbar stayed at the top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Ensure navbar is above all other content */
-    background: rgba(46, 46, 46, 0.7); /* Transparent background with slight opacity */
-    backdrop-filter: blur(6px); /* Adds blur effect to background */
+:root {
+    --main-font: 'League Spartan', Arial, sans-serif;
+    --primary-color:#f85e0a;
+    --secondary-color:#1c366a;
+    --tertiary-color:#ffc700;
+    --complimentary-color:#f0b211;
+    --white-text:#fff;
 }
+
+body {
+    margin: 0;
+    font-family: var(--main-font);
+}
+/* Header container */
+.heading {
+  background-color: var(--white-text);
+  padding: 5px 20px;
+
+}
+
+/* Flex list layout */
+.heading-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly; /* <-- Even spacing */
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  color: var(--secondary-color);
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+/* Icons in contact items */
+.heading-list li i {
+  margin-right: 8px;
+  color: var(--secondary-color);
+}
+
+/* Social icon links */
+.social-icon {
+  color: var(--secondary-color);
+  margin-left: 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: var(--primary-color); /* Optional hover color */
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .heading-list {
+    display: none;
+  }
+}
+
+/* Container */
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Default navbar */
+.navbar {
+  background-color: var(--primary-color);
+  transition: background-color 0.3s ease;
+}
+
+/* New color when sticky takes effect */
+.navbar.sticky-active {
+  background-color: var(--secondary-color); /* Dark blue or any new color */
+}
+/* When sticky-active takes effect */
+.navbar.sticky-active .nav-link::before {
+  background-color: var(--primary-color); /* Example: yellow underline on dark navbar */
+}
+.navbar-brand{
+    position: relative;
+    left: 0;
+    top: 10;                                                                                                                                                                                         
+    z-index: 10;
+}
+.navbar-brand img {
+  height: clamp(60px, 10vw, 80px);
+}
+
+/* Collapse style on small screens */
+.navbar .collapse .navbar-collapse { 
+  justify-content: center;
+  background-color:var(--primary-color) ;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Nav list - apply gap here */
+.navbar-nav {
+  display: flex;
+  gap: 25px; /* ✅ Adds space between each <li> */
+  align-items: center;
+}
+
+/* Nav links */
+.navbar-nav .nav-link {
+  color: var(--white-text);
+  text-decoration: none;
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 8px 10px; /* ✅ Adds inner spacing around links */
+}
+
+/* Updated underline using ::before instead of ::after */
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transform-origin: left;
+  transition: width 0.3s ease;
+  z-index: 1;
+}
+
+.navbar-nav .nav-link:hover::before {
+  width: 100%;
+}
+
+/* Fix dropdown toggle alignment */
+.navbar-nav .dropdown-toggle {
+  padding-right: 1.5rem; /* Make space for caret */
+  background-color: transparent;
+  position: relative;
+  z-index: 2; /* On top of ::after */
+}
+.navbar-nav .dropdown-toggle::after {
+  display: none !important;
+}
+
+
+/* Toggler icon style */
+.navbar-toggler-icon {
+  background-color: rgb(53, 53, 53);
+}
+
+
 
 /* Animation for Navbar */
 @keyframes slideDown {
@@ -20,48 +162,6 @@
         transform: translateY(-100%);
         opacity: 1;
     }
-}
-
-/* Navbar Links */
-.navbar-nav .nav-link {
-    position: relative;
-    color: white; /* Ensure the links are white by default */
-    padding: 10px 15px;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.3s ease-in-out;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #FFD700; /* Gold color for hover */
-}
-
-/* Hover Effect for Navbar Links */
-.navbar-nav .nav-link:hover::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #FFD700; /* Gold underline effect */
-    transform: scaleX(2);
-    transform-origin: bottom left;
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Fix for Navbar toggler icon visibility on mobile */
-.navbar-toggler-icon {
-    background-color: rgb(53, 53, 53); /* Ensure the hamburger icon is visible */
-}
-
-/* Navbar collapse on smaller screens */
-.collapse.navbar-collapse {
-    justify-content: flex-end; /* Align navbar links to the right */
-    background-color: rgba(58, 57, 57, 0.7); /* Add background color to make text visible */
-    padding: 10px;
-    border-radius: 10px;
 }
 
 /* Additional Styling for Navbar on Mobile */
@@ -77,18 +177,13 @@
     }
 
     .navbar-nav .nav-link:hover {
-        background-color: #000000; /* Highlight effect */
+        background-color: var(--primary-color); /* Highlight effect */
         border-radius: 5px;
         }
 
-         body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
     /* Banner-style nav bar */
     .navbar {
-      background-color: #161616; /* Navy blue banner */
+      background-color: var(--primary-color); /* Navy blue banner */
       padding: 20px 40px; /* Padding (top-bottom, left-right) */
       display: flex;
       justify-content: space-between;
@@ -110,37 +205,59 @@
     }
 
     .navbar li a {
-      color: white;
+      color: var(--white-text);
       text-decoration: none;
       padding: 10px 15px; /* Padding inside nav links */
-      border-radius: 5px;
+
     }
 
     .navbar li a:hover {
-      background-color: #ffffff; /* Hover effect */
+      background-color: var(--white-text); /* Hover effect */
     }
 
-    }
+}
 
-        .background-container video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: auto;
-            height: 100%;
-            transform: translate(-50%, -50%);
-            min-width: 100%;
-            min-height: 100%;
-            object-fit: cover;
-        }
+.video-banner {
+    width: 100%;
+    aspect-ratio: 21 / 6; /* Cinematic ratio */
+    position: relative;
+    overflow: hidden;
+    background-color: black; /* Fallback background */
+}
 
-        /* Text Styling */
-        body {
-            font-family: Arial,sans-serif;
-            margin: 0;
-            padding: 0;
-            color: white;
-        }
+.video-banner video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -53%) scale(0.8); 
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* .video-overlay-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(2px); 
+  border-radius: 8px; 
+} */
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* adjust darkness here */
+  z-index: 1;
+}
+
+
 
         /* Transparent Footer */
         footer {
@@ -164,45 +281,8 @@
                 transform: translateY(0);
                 opacity: 1;
             }
-        }
+        }           
 
-        /* Hover Effect for Navbar Links */
-        .navbar-nav .nav-link {
-            position: relative;
-            transition: color 0.3s ease-in-out;
-        }
-
-        .navbar-nav .nav-link:hover::after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
-
-        .navbar-nav .nav-link:hover {
-            color: #FFD700; /* Change color on hover */
-        }
-        html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        }
-
-        .dropdown-menu {
-        min-width: 250px;
-        background: linear-gradient(135deg, #4c4c4c, #aeaeae); /* Example: purple to blue */
-        border-radius: 10px;
-        overflow: hidden;
-        border: none;
-        }
-
-        .dropdown-item {
-            transition: all 0.3s ease-in-out;
-            color: white; /* Text color to contrast against gradient */
-        }
-
-        .dropdown-item:hover {
-            background: linear-gradient(135deg, #f8621b, #ff9a44); /* Orange tone hover */
-            color: white;
-        }
 
 
         .container-fluid {
@@ -262,7 +342,7 @@
 
         .facebook-text {
             font-size: 1.1rem;
-            color: #ffffff;
+            color: var(--white-text);
             margin-bottom: 20px;
         }
 
@@ -277,7 +357,7 @@
             justify-content: center;
             padding: 15px 25px;
             background-color: #4267B2; /* Facebook brand color */
-            color: #fff;
+            color: var(--white-text);
             border-radius: 5px;
             font-size: 1.2rem;
             font-weight: bold;
@@ -415,7 +495,7 @@
     }
     .about-section {
     background: linear-gradient(to right, #f8621b, #f88c61);
-    color: #fff;
+    color: var(--white-text);
 }
 
 .about-title {
@@ -423,7 +503,7 @@
     padding: 15px 30px;
     border-radius: 12px;
     display: inline-block;
-    border: 2px solid #fff;
+    border: 2px solid var(--white-text);
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
