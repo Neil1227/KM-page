@@ -1,0 +1,22 @@
+:root {
+    --main-font: 'League Spartan', Arial, sans-serif;
+    --primary-color:#f85e0a;
+    --secondary-color:#1c366a;
+    --tertiary-color:#ffc700;
+    --complimentary-color:#f0b211;
+    --white-text:#fff;
+    --off-white-color:#f5f5f5;
+    --gray-complement: #8a94a6;
+
+}
+
+body {
+    margin: 0;
+    font-family: var(--main-font);
+}
+.hr {
+  border: none;
+  border-top: 2px solid var(--secondary-color); /* 4px thick black line */
+  width: 80%;
+    margin: 2rem auto;
+}
