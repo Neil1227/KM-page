@@ -1,24 +1,85 @@
-   /* Your full CSS remains the same */
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #ffffff, #ff6a00);
-      margin: 0;
+    /* Background Video Styling */
+    .background-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
     }
-    .navbar {
-      background: linear-gradient(90deg, #ff6a00, #ffb940);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(10px);
-      padding: 1rem 2rem;
+
+    .background-container video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: auto;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
     }
-    .navbar-brand,
-    .navbar-nav .nav-link {
-      color: #ffffff !important;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-    .navbar-nav .nav-link:hover {
-      color: #ff9900 !important;
-    }
+
+.background-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity here */
+    z-index: 1;
+}
+
+.navbar {
+    position: sticky;
+    top: 0; 
+    z-index: 1030;
+    background: linear-gradient(90deg, #ff6a00, #ffb940);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 25px;
+    align-items: flex-end;
+}
+
+  .navbar-nav .nav-link {
+    position: relative;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+/* Underline on hover */
+  .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0; /* adjust as needed */
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+    
+  }
+
+  .navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  /* Active link underline */
+  .navbar-nav .nav-link.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
     .cards-container {
       padding: 120px 40px 40px;
       display: flex;
@@ -45,51 +106,7 @@
       height: 220px;
       object-fit: cover;
     }
-    .comment-section {
-      background: #fff;
-      padding: 40px;
-      margin: 60px auto;
-      border-radius: 20px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-      max-width: 850px;
-    }
-    .comment-form input,
-    .comment-form textarea {
-      width: 100%;
-      padding: 14px 18px;
-      margin-bottom: 1.2rem;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-    }
-    .comment-form button {
-      background: linear-gradient(90deg, #ff5100, #f8976b);
-      color: #fff;
-      padding: 12px 28px;
-      border: none;
-      border-radius: 30px;
-      font-weight: bold;
-    }
-    .comment-form button:hover {
-      background: linear-gradient(90deg, #a63601, #fa7a3e);
-      transform: scale(1.05);
-    }
-    .comment {
-      background: #f8fbff;
-      padding: 16px;
-      border-radius: 12px;
-      margin-bottom: 14px;
-    }
-    .comment strong {
-      color: #333;
-    }
-    .reply {
-      margin-left: 20px;
-      font-size: 14px;
-      background: #eef4ff;
-      padding: 8px;
-      border-radius: 10px;
-      margin-top: 8px;
-    }
+
     footer {
       background: #121212;
       color: #aaa;
@@ -120,3 +137,10 @@
     #nextBtn {
       right: 10px;
     }
+        /* Footer Styling */
+        footer {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }

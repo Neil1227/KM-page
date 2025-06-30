@@ -20,56 +20,18 @@
             min-height: 100%;
             object-fit: cover;
         }
-
-        /* Ensure text is readable over the video */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: rgb(0, 0, 0);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        .navbar {
-          height: 80px; /* Adjust height as needed */
-        }
-
-        .navbar-brand {
-          font-size: 1.5rem; /* Adjust font size */
-        }
+      .background-container::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity here */
+          z-index: 1;
+      }
 
 
-         /* Navbar Styling */
-         .navbar {
-            background-image: url('https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/468557307_1246877726587907_5557851683030240775_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFWdWHv81195_EJSkR0MNIgpEGuN6D7LWikQa43oPstaJpjuNtXUXjNAw2hX4XazoreBAlH88u7oazJSg61yaW6&_nc_ohc=X-sv8DCOUFgQ7kNvgFEp2Rz&_nc_oc=AdjfGBq34JMFgw9yQMtZpLsIjDEsxIvHYZd6GF02yMcjRbVxZNNGqIg0LWLNOdG-9nE&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=Auo5af5BrpHxHh6mXn0bw2h&oh=00_AYAfB5zAJBvZWGp9fi_hg-NUZxtXb12HNCSOcvJzNlJ9Zw&oe=67674EAB');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            height: 80px;
-         }
-
-        .navbar .navbar-brand {
-            font-size: 1.5rem;
-        }
-        .navbar {
-            background: rgba(23, 23, 23, 0.5);
-            backdrop-filter: blur(5px);
-            height: 80px;
-        }
-        .navbar {
-            background: linear-gradient(90deg, #ff6a00, #ffb940);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-        }
-        .navbar-nav .nav-link:hover {
-             color: #fff700 !important;
-        }
-        body::before {
-            content: "";
-            display: block;
-            height: 80px; /* same as navbar height */
-        }
         #IEC-Materials {
              padding-top: 100px; /* slightly more than navbar to create spacing */
         }
@@ -96,11 +58,9 @@
             margin-top: 10px;
         }
 
-        /* Footer Styling */
-        footer {
+    footer {
       background-color: rgba(0, 0, 0, 0.6);
       color: #fff;
       padding: 15px;
       text-align: center;
-      margin-top: auto;
     }

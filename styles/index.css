@@ -25,6 +25,7 @@
             background: linear-gradient(90deg, var(--primary-color), var(--complimentary-color));
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
          }
+         
 .carousel-text {
   position: relative;
   width: 200px;
@@ -38,7 +39,7 @@
   text-align: center;
   font-size: 2.2rem;
   letter-spacing: 0.1em;
-  color: var(--secondary-color);
+  color: var(--white-text);
   opacity: 0;
   animation: fadeText 9s infinite;
 }

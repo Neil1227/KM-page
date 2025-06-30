@@ -16,260 +16,18 @@
   }
 }
 
-/* Header container */
-.heading {
-  background-color: var(--white-text);
-  padding: 5px 20px;
-
-}
-
-/* Flex list layout */
-.heading-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-evenly; /* <-- Even spacing */
-  flex-wrap: wrap;
-  width: 100%;
-  align-items: center;
-  color: var(--secondary-color);
-  font-weight: 300;
-  font-size: 0.8rem;
-}
-
-/* Icons in contact items */
-.heading-list li i {
-  margin-right: 8px;
-  color: var(--secondary-color);
-}
-
-/* Social icon links */
-.social-icon {
-  color: var(--secondary-color);
-  margin-left: 10px;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
-  text-decoration: none;
-}
-
-.social-icon:hover {
-  color: var(--primary-color); /* Optional hover color */
-}
-
-/* Responsive behavior */
-@media (max-width: 768px) {
-  .heading-list {
-    display: none;
-  }
-}
-
 /* Container */
 .container-fluid {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-/* Default navbar */
-.navbar {
-  background-color: var(--primary-color);
-  transition: background-color 0.3s ease;
-}
-
-/* New color when sticky takes effect */
-.navbar.sticky-active {
-  background-color: var(--secondary-color); /* Dark blue or any new color */
-}
-/* When sticky-active takes effect */
-.navbar.sticky-active .nav-link::before {
-  background-color: var(--primary-color); /* Example: yellow underline on dark navbar */
-}
-.navbar-brand{
-    position: relative;
-    left: 0;
-    top: 10;                                                                                                                                                                                         
-    z-index: 10;
-}
-.navbar-brand img {
-  height: clamp(60px, 10vw, 80px);
-}
-
-/* Collapse style on small screens */
-.navbar .collapse .navbar-collapse { 
-  justify-content: center;
-  background-color:var(--primary-color) ;
-  width: 100%;
-  padding: 10px;
-}
-
-/* Nav list - apply gap here */
-.navbar-nav {
-  display: flex;
-  gap: 25px; /* ✅ Adds space between each <li> */
-  align-items: center;
-}
-
-/* Nav links */
-.navbar-nav .nav-link {
-  color: var(--white-text);
-  text-decoration: none;
-  font-size: 1.15rem;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease;
-  position: relative;
-  padding: 8px 10px; /* ✅ Adds inner spacing around links */
-}
-
-/* Updated underline using ::before instead of ::after */
-.navbar-nav .nav-link::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 2px;
-  width: 0;
-  height: 2px;
-  background-color: var(--secondary-color);
-  transform-origin: left;
-  transition: width 0.3s ease;
-  z-index: 1;
-}
-
-.navbar-nav .nav-link:hover::before {
-  width: 100%;
-}
-
-/* Fix dropdown toggle alignment */
-.navbar-nav .dropdown-toggle {
-  padding-right: 1.5rem; /* Make space for caret */
-  background-color: transparent;
-  position: relative;
-  z-index: 2; /* On top of ::after */
-}
-.navbar-nav .dropdown-toggle::after {
-  display: none !important;
-}
-/* Ensure dropdown in mobile looks clean and smooth */
-.navbar-nav .dropdown-menu {
-  background-color: var(--primary-color); /* Match navbar background */
-  border: none;
-  border-radius: 0;
-  transition: all 0.3s ease-in-out;
-  box-shadow: none;
-  padding: 0;
-}
-
-.navbar-nav .dropdown-menu .dropdown-item {
-  color: var(--white-text);
-  padding: 12px 20px;
-  transition: background-color 0.3s ease;
-  font-size: 0.95rem;
-}
-
-.navbar-nav .dropdown-menu .dropdown-item:hover {
-  background-color: var(--secondary-color);
-  color: var(--white-text);
-}
-
-/* Smooth dropdown appearance on mobile */
-@media (max-width: 991px) {
-  .navbar-nav .dropdown-menu {
-    position: relative;
-    width: 100%;
-    animation: dropdownFade 0.3s ease-in-out;
-  }
-
-  @keyframes dropdownFade {
-    from {
-      opacity: 0;
-      transform: translateY(-5px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-}
-
-
-
-/* Toggler icon style */
-.navbar-toggler-icon {
-  border: none;
-}
-
-
-
-/* Animation for Navbar */
-@keyframes slideDown {
-    from {
-        transform: translateY(-100%);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(-100%);
-        opacity: 1;
-    }
-}
-
-@media (max-width: 991px) {
-  .navbar {
-    background-color: var(--primary-color);
-    padding: 20px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    z-index: 999;
-    flex-wrap: nowrap;
-  }
-
-  .navbar .navbar-toggler {
-    margin-left: auto;
-  }
-
-  .navbar-nav {
-    text-align: left;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 1rem;
-    color: var(--white-text) !important;
-    padding: 10px;
-    background-color: transparent !important; /* No hover bg */
-  }
-
-  /* Remove hover background and color change on mobile */
-  .navbar-nav .nav-link:hover,
-  .navbar-nav .dropdown .nav-link:hover {
-    background-color: transparent !important;
-    color: var(--white-text) !important;
-  }
-
-  /* Remove background on dropdown toggle when expanded */
-  .navbar-nav .dropdown.show .nav-link {
-    background-color: transparent !important;
-    color: var(--white-text) !important;
-  }
-
-  .navbar li a {
-    padding: 10px 15px;
-    color: var(--white-text);
-    text-decoration: none;
-  }
-
-  .navbar li a:hover {
-    background-color: transparent !important;
-    color: var(--white-text) !important;
-  }
-}
 
 
 
 .video-banner {
     width: 100%;
-    aspect-ratio: 21 / 6; /* Cinematic ratio */
+    aspect-ratio: 21 / 7; /* Cinematic ratio */
     position: relative;
     overflow: hidden;
     background-color: black; /* Fallback background */
@@ -314,8 +72,8 @@
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  background-color: rgba(28, 54, 106, 0.9); /* dark blue with opacity */
-  padding: 10px;
+  background-color:var(--primary-color); /* dark blue with opacity */
+  padding: 10px 10px 10px 0px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   z-index: 2;
@@ -331,13 +89,13 @@
 }
 
 .floating-socials a:hover {
-  color: var(--primary-color); /* optional hover color */
+  color: var(--secondary-color); /* optional hover color */
 }
 
 
 /* media section--------------------------------------------------------------------- */
 .section-title {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin: 0;
     padding: 10px;
     display: inline-block;
@@ -413,7 +171,7 @@
   padding: 15px;
 }
 p.card-text {
-color: black;
+color: var(--gray-complement);
 }
 /* sdgs-------------------------------------------------------------- */
   .sdg-card-hover {
@@ -526,11 +284,20 @@ color: black;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     margin: 0 200px 10px 200px;
   }
-@media (max-width: 1100px) {
-    .about-box {
+  .about-box p {
+  text-align: justify;
+  font-size: 1rem;
+}
 
+@media (max-width: 1100px) {
+  .about-box {
     margin: 0 50px 10px 50px;
   }
+  .about-box p {
+  text-align: justify;
+  font-size: .9rem;
+}
+
 }
   .about-logo {
     max-width: 120px;
@@ -554,13 +321,13 @@ color: black;
 /* footer------------------------------------------------ */
 .footer-section {
   background-color: var(--gray-complement);
-  color: #000;
+  color: var(--white-text);
   padding: 40px 20px;
   font-size: 1rem;
 }
 
 .list-unstyled a {
-  color: #000; /* Light text, works well on dark backgrounds */
+  color: var(--white-text); /* Light text, works well on dark backgrounds */
   font-size: 0.95rem;
   transition: color 0.3s ease;
 }
@@ -572,12 +339,19 @@ color: black;
 }
 
 .footer-logo {
-  width: 100px;
+  width: 110px;
   height: auto;
   object-fit: contain;
   padding: 5px;
   border-radius: 5px;
 }
+.footer-bottom {
+  background-color: #808080; /* dark blue */
+  color: #fff;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
 
 @keyframes slideDown {
   from {
@@ -589,60 +363,11 @@ color: black;
       opacity: 1;
     }
   }           
-
-
-
-
-        .facebook-section {
-            background-color: rgba(0, 0, 0, 0.8); 
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
-            max-width: 100%;
-        }
-
-        .facebook-title {
-            font-size: 1.5rem;
-            color: #4267B2; 
-            margin-bottom: 10px;
-            font-family: 'Poppins', sans-serif;
-            font-weight: bold;
-        }
-
-        .facebook-text {
-            font-size: 1.1rem;
-            color: var(--white-text);
-            margin-bottom: 20px;
-        }
-
-        .facebook-link {
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .facebook-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 15px 25px;
-            background-color: #4267B2; 
-            color: var(--white-text);
-            border-radius: 5px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        .facebook-button:hover {
-            background-color: #365899;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2)
-        }
-
-        .facebook-button i {
-            margin-right: 10px;
-        }
-
-        .facebook-button span {
-            font-family: 'Poppins', sans-serif;
-        }   
+/* contact----------------------------------------------- */
+.map-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  background-color: #f5f5f5; /* optional background */
+}
