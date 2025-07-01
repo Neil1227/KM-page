@@ -54,7 +54,7 @@
       <!-- Background Video -->
   <div class="background-container">
     <video autoplay muted loop>
-      <source src="/assets/videos/Orange Abstract Background YouTube Thumbnail1.mp4" type="video/mp4">
+      <source src="./assets/videos/Orange Abstract Background YouTube Thumbnail1.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
@@ -64,7 +64,11 @@
         <!-- Card 1 -->
         <div class="col-md-4 mb-4">
           <div class="card h-100">
-            <img src="./assets/img/iecimg1.png" class="card-img-top" alt="IEC Material">
+            <picture>
+                 <source srcset="./assets/img/" type="image/webp">
+                 <img src="./assets/img/" class="card-img-top media-img" alt="ICTV">
+            </picture>  
+            <!-- <img src="./assets/img/iecimg1.png" class="card-img-top" alt="IEC Material"> -->
             <div class="card-body">
               <h5 class="card-title">Episode 1</h5>
               <p class="card-text">Discover the basics of fisheries and sustainable practices.</p>
