@@ -60,7 +60,13 @@
     .btn-primary:hover {
       background-color: var(--btn-hover-gold);
     }
-
+.brochure-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.brochure-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
     footer {
       background-color: rgba(0, 0, 0, 0.6);
       color: #fff;
