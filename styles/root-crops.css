@@ -23,28 +23,6 @@
             object-fit: cover;
         }
 
-        /* Navbar Styling */
-        .navbar {
-            background: linear-gradient(90deg, #ff6a00, #ffb940);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-            backdrop-filter: blur(10px);
-            padding: 1rem 2rem;
-        }
-
-        .navbar .nav-link {
-            color: #ffffff;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        .navbar .nav-link:hover {
-            color: #ffdd00;
-        }
-
-        .dropdown-item:hover {
-            background: linear-gradient(135deg, #f8621b, #ff9a44); /* Orange tone hover */
-            color: white;
-        }
 
         /* Header Video Styling */
         .video-header {

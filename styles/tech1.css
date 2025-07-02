@@ -32,54 +32,6 @@
     z-index: 1;
 }
 
-.navbar {
-    position: sticky;
-    top: 0; 
-    z-index: 1030;
-    background: linear-gradient(90deg, #ff6a00, #ffb940);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(5px);
-    z-index: 10;
-}
-
-.navbar-nav {
-    display: flex;
-    gap: 25px;
-    align-items: flex-end;
-}
-
-  .navbar-nav .nav-link {
-    position: relative;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-
-/* Underline on hover */
-  .navbar-nav .nav-link::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0; /* adjust as needed */
-    width: 100%;
-    height: 2px;
-    background-color: var(--secondary-color);
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease;
-    
-  }
-
-  .navbar-nav .nav-link:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-  }
-
-  /* Active link underline */
-  .navbar-nav .nav-link.active::after {
-    transform: scaleX(1);
-    transform-origin: left;
-  }
-
     .cards-container {
       padding: 120px 40px 40px;
       display: flex;

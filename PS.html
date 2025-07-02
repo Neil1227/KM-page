@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plagiarism Scan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/ps.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/media-resource-navbar.css">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+
     
 </head>
 
@@ -22,20 +26,38 @@
         </video>
     </div>
 
-        <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+<!-- Header -->
+<header>
+  <div class="heading" data-aos="fade-down" data-aos-duration="1000">
+    <ul class="heading-list mt-1">
+      <li class="heading-content-email"><i class="fas fa-envelope"></i> kmc@psau.edu.ph</li>
+      <li class="heading-content-phone"><i class="fas fa-phone"></i> +63 900 000 0000</li>
+      <li class="heading-content-location"><i class="fas fa-map-marker-alt"></i> PAC, San Agustin, Magalang, Pampanga, Philippines </li>
+      <li class="heading-content-social">
+        <a href="https://www.facebook.com/psau.kmc" class="social-icon" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="mailto:kmc@psau.edu.ph" class="social-icon"><i class="fas fa-envelope"></i></a>
+      </li>
+    </ul>
+  </div>
+</header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="homepage.html">Services</a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <!-- Navbar Toggler (right-aligned) -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="Homepage.html"> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="PS.html"> Plagiarism Scan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="PA.html"> Promotional Activities</a></li>
-                    <li class="nav-item"><a class="nav-link" href="KSA.html"> Knowledge Sharing</a></li>
-                </ul>
+
+            <!-- Collapsible Nav Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto text-center">
+                <li class="nav-item"><a class="nav-link text-white" href="Homepage.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white active" href="PS.html"> Plagiarism Scan</a></li>
+                <li class="nav-item"><a class="nav-link text-white " href="PA.html"> Promotional Activities</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="KSA.html"> Knowledge Sharing</a></li>
+            </ul>
             </div>
         </div>
     </nav>

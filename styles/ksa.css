@@ -20,41 +20,6 @@
             min-height: 100%;
             object-fit: cover;
         }
-
-        /* Navbar */
-        .navbar {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            padding: 10px 20px;
-            border-radius: 10px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-        .navbar {
-            background: linear-gradient(90deg, #ff6a00, #ffb940);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-        }
-        .navbar-brand {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #191919 !important;
-        }
-
-        .navbar-nav .nav-link {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #333 !important;
-            padding: 10px;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .navbar-nav .nav-link:hover {
-            color: #f8f81b !important;
-        }
-
         /* Content Section */
         .container {
             margin-top: 100px;

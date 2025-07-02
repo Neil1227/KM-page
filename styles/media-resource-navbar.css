@@ -1,5 +1,6 @@
 .navbar {
     position: sticky;
+    font-size: 1.2rem;
     top: 0; 
     z-index: 1030;
     background: linear-gradient(90deg, #ff6a00, #ffb940);
@@ -73,7 +74,7 @@
 }
 
 /* Smooth dropdown appearance on mobile */
-@media (max-width: 991px) {
+@media (max-width: 1000px) {
   .navbar-nav .dropdown-menu {
     position: relative;
     width: 100%;
@@ -108,14 +109,15 @@
         opacity: 1;
     }
 }
-@media (max-width: 991px) {
+@media (max-width: 1000px) {
   .navbar {
     background-color: var(--primary-color);
     height: 60px;
     padding: 16px 20px;
     display: flex;
     align-items: center;
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 999;
   }
 
