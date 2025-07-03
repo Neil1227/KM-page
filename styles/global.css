@@ -5,7 +5,7 @@
     --tertiary-color:#ffc700;
     --complimentary-color:#f0b211;
     --white-text:#fff;
-    --off-white-color:#f5f5f5;
+    --off-white-color:#f3f1f1;
     --gray-complement: #696969;
     --btn-gold:rgb(255, 149, 0);
     --btn-hover-gold:rgb(255, 123, 0);
@@ -15,6 +15,8 @@ body {
     margin: 0;
     font-family: var(--main-font);
 }
+
+
 /* Header container */
 .heading {
   background-color: var(--white-text);
@@ -69,8 +71,10 @@ body {
   width: 80%;
   margin: 2rem auto;
 }
+
 .container-page {
   padding: 0px 150px ;
+  flex: 1;
 }
 
 /* Smooth dropdown appearance on mobile */

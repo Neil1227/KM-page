@@ -7,7 +7,7 @@
     <title>Agriculture Research</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/others.css">
+    <link rel="stylesheet" href="./styles/research.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/media-resource-navbar.css">
     <link rel="stylesheet" href="./styles/global.css">
@@ -15,13 +15,15 @@
 </head>
 
 <body>
-    <!-- Background Video Container -->
-    <div class="background-container">
-        <video autoplay muted loop>
-            <source src="./assets/videos/Orange Abstract Background YouTube Thumbnail1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+<!-- Background Image Container -->
+<div class="background-container">
+  <picture>
+    <!-- Optional fallback for browsers that don't support WebP -->
+    <source srcset="./assets/img/logos-bg.webp" type="image/webp">
+    <img src="./assets/img/logos-bg.png" alt="Abstract Background" loading="lazy" class="background-img">
+  </picture>
+    <div class="background-overlay"></div>
+</div>
 <!-- Header -->
 <header>
   <div class="heading" data-aos="fade-down" data-aos-duration="1000">
@@ -49,7 +51,7 @@
         <!-- Collapsible Nav Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto text-center">
-            <li class="nav-item"><a class="nav-link text-white" href="Homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="Homepage.html#research">Home</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="agriculture.html">Agriculture</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="aquaculture.html">Aquaculture</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="livestock.html">Livestock</a></li>
@@ -63,42 +65,55 @@
     </div>
     </nav>
 
-    <!-- Header Video -->
-    <div class="video-header">
-        <video autoplay muted loop>
-            <source src="" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <div class="container-page py-5">
+    <!-- Top Row -->
+    <div class="row g-4 mb-4">
+        <div class="col-md-5">
+        <div class="bento-card h-100">
+            <h3>Introduction 
+                <hr>
+            </h3>
+            <p>
+                Commercially available stoves for briquettes are often not suitable for the biomass briquettes produced at PSAU. Additionally, the COVID-19 pandemic had a significant impact on the ecotourism sector in the SPCW, leading to a decline in visitor numbers, disruption of local livelihoods, and a negative effect on environmental sustainability.
+           </p>
+        </div>
+        </div>
+        <div class="col-md-7">
+        <div class="bento-card h-100">
+            <h3>Initiatives 
+                <hr>
+            </h3>
+            <p>
+                The stove designed for biomass briquettes highlights the need for public-private partnerships and emphasizes the importance of continuous monitoring and evaluation to ensure the long-term sustainability of the SPCW's ecotourism sector. This collaborative approach is essential for maintaining the balance between economic development, environmental protection, and local community benefits.            
+            </p>
+        </div>
+        </div>
     </div>
 
-    <!-- Content Section -->
-    <div class="container">
-        <section class="content-section">
-            <h3>Introduction</h3>
-            <p>
-                Commercially available stoves for briquettes are often not suitable for the biomass briquettes produced at PSAU. Additionally, the COVID-19 pandemic had a significant impact on the ecotourism sector in the SPCW, leading to a decline in visitor numbers, disruption of local livelihoods, and a negative effect on environmental sustainability.</p>
-        </section>
-
-        <section class="content-section">
-            <h3>Initiatives</h3>
-            <p>
-                The stove designed for biomass briquettes highlights the need for public-private partnerships and emphasizes the importance of continuous monitoring and evaluation to ensure the long-term sustainability of the SPCW's ecotourism sector. This collaborative approach is essential for maintaining the balance between economic development, environmental protection, and local community benefits.</p>
-        </section>
-
-        <section class="content-section">
-            <h3>R4D Thrusts and Priorities</h3>
+    <!-- Bottom Row -->
+    <div class="row g-4 " style="padding-bottom: 100px;">
+        <div class="col-md-7">
+        <div class="bento-card h-100">
+            <h3>R4D Thrusts and Priorities 
+                <hr>
+            </h3>
             <ul>
-                <li>Proposed Fabrication and Performance Evaluation of PSAU Briquette Stove</li>
-                <li>Drawing Lessons from the COVID-19 Pandemic and Charting a Way Forward for Ecotourism Policy</li>
-            </ul>
-        </section>
-
-        <section class="content-section">
-            <h3>Recommendations</h3>
+                <li>Proposed Fabrication and Performance Evaluation of PSAU Briquette Stove.</li>
+                <li>Drawing Lessons from the COVID-19 Pandemic and Charting a Way Forward for Ecotourism Policy.</li>
+           </ul>
+        </div>
+        </div>
+        <div class="col-md-5" >
+        <div class="bento-card h-100" >
+            <h3>Recommendations 
+                <hr>
+            </h3>
             <ul>
                 <li>There are other studies that need to be explored and developed. With this, other researchable areas are highly recommended.</li>
             </ul>
-        </section>
+        </div>
+        </div>
+    </div>
     </div>
 
     <!-- Footer -->

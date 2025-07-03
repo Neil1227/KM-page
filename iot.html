@@ -7,7 +7,7 @@
     <title>Agriculture Research</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/iot.css">
+    <link rel="stylesheet" href="./styles/research.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/media-resource-navbar.css">
     <link rel="stylesheet" href="./styles/global.css">
@@ -15,13 +15,15 @@
 </head>
 
 <body>
-    <!-- Background Video Container -->
-    <div class="background-container">
-        <video autoplay muted loop>
-            <source src="./assets/videos/Orange Abstract Background YouTube Thumbnail1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+<!-- Background Image Container -->
+<div class="background-container">
+  <picture>
+    <!-- Optional fallback for browsers that don't support WebP -->
+    <source srcset="./assets/img/logos-bg.webp" type="image/webp">
+    <img src="./assets/img/logos-bg.png" alt="Abstract Background" loading="lazy" class="background-img">
+  </picture>
+    <div class="background-overlay"></div>
+</div>
 <!-- Header -->
 <header>
   <div class="heading" data-aos="fade-down" data-aos-duration="1000">
@@ -49,7 +51,7 @@
         <!-- Collapsible Nav Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto text-center">
-            <li class="nav-item"><a class="nav-link text-white" href="Homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="Homepage.html#research">Home</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="agriculture.html">Agriculture</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="aquaculture.html">Aquaculture</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="livestock.html">Livestock</a></li>
@@ -63,49 +65,61 @@
     </div>
     </nav>
 
-    <!-- Header Video -->
-    <div class="video-header">
-        <video autoplay muted loop>
-            <source src="" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <div class="container-page py-5">
+    <!-- Top Row -->
+    <div class="row g-4 mb-4">
+        <div class="col-md-5">
+        <div class="bento-card h-100">
+            <h3>Introduction 
+                <hr>
+            </h3>
+            <p>
+                Internet of Things (IoT) is an emerging subject with growing technical, social, and economic importance. Everyday items such as consumer products, vehicles, industrial and utility components, sensors, and more are being integrated with internet connectivity and advanced data analytics, offering the potential to revolutionize how we live, work, and interact.
+<br>
+There are several challenges that need to be addressed in both educational and societal contexts. Communication between students and faculty members regarding attendance, whereabouts, and important announcements remains a significant issue. In addition, the increasing number of fire incidents annually highlights a growing safety concern, while outlets and electrical problems further exacerbate the situation. Security is another pressing issue that needs urgent attention in modern society. Identifying specific locations in large areas can also be difficult, making it harder to address various concerns effectively. In agriculture, there is a growing issue of water wastage in irrigation, as over-moisture in the soil leads to fungus formation.
+<br>
+Furthermore, electrical problems with IoT-based irrigation systems complicate efforts to manage water efficiently. With water resources becoming scarcer and more expensive, the need for more sustainable water management practices is becoming ever more urgent, as water availability continues to decline. These interconnected problems require comprehensive solutions to improve both safety and resource management.
+            </p>
+        </div>
+        </div>
+        <div class="col-md-7">
+        <div class="bento-card h-100">
+            <h3>Initiatives 
+                <hr>
+            </h3>
+            <p>
+                To address water management, an automated water irrigation system application was designed, utilizing a soil moisture sensor and Raspberry Pi to monitor irrigation levels in real-time. Fault detection in the irrigation system is managed through an Arduino-based serial monitor, ensuring quick identification of issues and minimizing system downtime. Additionally, a water resources thematic map was developed to catalog both existing and potential water resources within the PSAU property, facilitating the identification of various water sources and receivers across the campus. Together, these systems aim to enhance operational efficiency, ensure safety, and promote sustainability within the institution. It presents a series of interconnected systems aimed at improving communication, safety, and resource management within an academic institution. One system allows faculty members to post announcements, facilitating communication with students through a centralized application. Another system is designed to enhance safety by recording and displaying data from smoke, temperature, and fire sensors on an LCD monitor, while also sending SMS alerts to authorized fire department personnel in case of emergencies. Additionally, a web-based system embedded in a Raspberry Pi was developed to monitor and control electrical switches manually or via a scheduling system, enabling faculty to set operational schedules. For enhanced security, an IoT-based electronic door lock with an intrusion detection system was also created. Another key system generates topographic maps for various areas within the university, including academic, commercial, and science and technology zones, while also mapping infrastructure facilities across the PSAU campus.
+            </p>
+        </div>
+        </div>
     </div>
 
-    <!-- Content Section -->
-    <div class="container">
-        <section class="content-section">
-            <h3>Introduction</h3>
-            <p>
-                Internet of Things (IoT) is an emerging subject with growing technical, social, and economic importance. Everyday items such as consumer products, vehicles, industrial and utility components, sensors, and more are being integrated with internet connectivity and advanced data analytics, offering the potential to revolutionize how we live, work, and interact.</p>
-            <p>
-                There are several challenges that need to be addressed in both educational and societal contexts. Communication between students and faculty members regarding attendance, whereabouts, and important announcements remains a significant issue. In addition, the increasing number of fire incidents annually highlights a growing safety concern, while outlets and electrical problems further exacerbate the situation. Security is another pressing issue that needs urgent attention in modern society. Identifying specific locations in large areas can also be difficult, making it harder to address various concerns effectively. In agriculture, there is a growing issue of water wastage in irrigation, as over-moisture in the soil leads to fungus formation.</p>
-            <P>Furthermore, electrical problems with IoT-based irrigation systems complicate efforts to manage water efficiently. With water resources becoming scarcer and more expensive, the need for more sustainable water management practices is becoming ever more urgent, as water availability continues to decline. These interconnected problems require comprehensive solutions to improve both safety and resource management.</P>
-        </section>
-
-        <section class="content-section">
-            <h3>Initiatives</h3>
-            <p>
-                To address water management, an automated water irrigation system application was designed, utilizing a soil moisture sensor and Raspberry Pi to monitor irrigation levels in real-time. Fault detection in the irrigation system is managed through an Arduino-based serial monitor, ensuring quick identification of issues and minimizing system downtime. Additionally, a water resources thematic map was developed to catalog both existing and potential water resources within the PSAU property, facilitating the identification of various water sources and receivers across the campus. Together, these systems aim to enhance operational efficiency, ensure safety, and promote sustainability within the institution. It presents a series of interconnected systems aimed at improving communication, safety, and resource management within an academic institution. One system allows faculty members to post announcements, facilitating communication with students through a centralized application. Another system is designed to enhance safety by recording and displaying data from smoke, temperature, and fire sensors on an LCD monitor, while also sending SMS alerts to authorized fire department personnel in case of emergencies. Additionally, a web-based system embedded in a Raspberry Pi was developed to monitor and control electrical switches manually or via a scheduling system, enabling faculty to set operational schedules. For enhanced security, an IoT-based electronic door lock with an intrusion detection system was also created. Another key system generates topographic maps for various areas within the university, including academic, commercial, and science and technology zones, while also mapping infrastructure facilities across the PSAU campus.</p>
-        </section>
-
-        <section class="content-section">
-            <h3>R4D Thrusts and Priorities</h3>
+    <!-- Bottom Row -->
+    <div class="row g-4">
+        <div class="col-md-7">
+        <div class="bento-card h-100">
+            <h3>R4D Thrusts and Priorities 
+                <hr>
+            </h3>
             <ul>
-                <li>A Design and Development of an Internet of Things (Iot) Based Secured office Automation, Monitoring, and Control with GSM Notification</li>
-                <li>Internet of Things Based Controlled Environment </li>
-                <li>Internet of Things Based Automated Irrigation System</li>
+                <li>A Design and Development of an Internet of Things (Iot) Based Secured office Automation, Monitoring, and Control with GSM Notification.</li>
+                <li>Internet of Things Based Controlled Environment.</li>
+                <li>Internet of Things Based Automated Irrigation System.</li>
             </ul>
-        </section>
-
-        <section class="content-section">
-            <h3>Recommendations</h3>
+        </div>
+        </div>
+        <div class="col-md-5">
+        <div class="bento-card h-100">
+            <h3>Recommendations 
+                <hr>
+            </h3>
             <ul>
-                <li>IoT-based technologies are fundamentally transforming various industries, and as the world increasingly moves toward technology-driven sectors, it’s essential to integrate these technologies into areas like education, agriculture, and aquaculture.
-                </li>
-                <li>The Internet of Things should have a continuous monitoring and evaluation system when it comes to its data and on what they have been developed. Additionally, the security of the device should be focused to update and have strong encryption, securing data storage practices, and access controls. 
-                </li>
+                <li>IoT-based technologies are fundamentally transforming various industries, and as the world increasingly moves toward technology-driven sectors, it’s essential to integrate these technologies into areas like education, agriculture, and aquaculture.</li>
+                <li>The Internet of Things should have a continuous monitoring and evaluation system when it comes to its data and on what they have been developed. Additionally, the security of the device should be focused to update and have strong encryption, securing data storage practices, and access controls.</li>
             </ul>
-        </section>
+        </div>
+        </div>
+    </div>
     </div>
 
     <!-- Footer -->

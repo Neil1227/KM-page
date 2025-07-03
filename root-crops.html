@@ -7,7 +7,7 @@
     <title>Agriculture Research</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/root-crops.css">
+    <link rel="stylesheet" href="./styles/research.css">
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/media-resource-navbar.css">
@@ -16,13 +16,15 @@
 </head>
 
 <body>
-    <!-- Background Video Container -->
-    <div class="background-container">
-        <video autoplay muted loop>
-            <source src="./assets/videos/Orange Abstract Background YouTube Thumbnail1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+<!-- Background Image Container -->
+<div class="background-container">
+  <picture>
+    <!-- Optional fallback for browsers that don't support WebP -->
+    <source srcset="./assets/img/logos-bg.webp" type="image/webp">
+    <img src="./assets/img/logos-bg.png" alt="Abstract Background" loading="lazy" class="background-img">
+  </picture>
+    <div class="background-overlay"></div>
+</div>
 <!-- Header -->
 <header>
   <div class="heading" data-aos="fade-down" data-aos-duration="1000">
@@ -50,7 +52,7 @@
         <!-- Collapsible Nav Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto text-center">
-            <li class="nav-item"><a class="nav-link text-white" href="Homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="Homepage.html#research">Home</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="agriculture.html">Agriculture</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="aquaculture.html">Aquaculture</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="livestock.html">Livestock</a></li>
@@ -64,46 +66,59 @@
     </div>
     </nav>
 
-    <!-- Header Video -->
-    <div class="video-header">
-        <video autoplay muted loop>
-            <source src="" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <div class="container-page py-5">
+    <!-- Top Row -->
+    <div class="row g-4 mb-4">
+        <div class="col-md-5">
+        <div class="bento-card h-100">
+            <h3>Introduction
+                <hr>
+            </h3>
+            <p>
+            Root Crops refers to any plant that is cultivated primarily for its edible, underground root, which stores nutrients for the plant. Root Crops are valuable for their ability to grow in a variety of soil types and climates, and they often provide a reliable food source, especially in areas with challenging growing conditions.            </p>
+            <p>
+            Crop management systems account for a significant portion of farmers production costs, with insect pests and diseases being major contributors to yield reduction. The low productivity of crops such as mungbean and peanut further exacerbates these challenges. Additionally, mice often mate less reliably, impacting their populations. Invasive plant species also tend to proliferate in environments where they were not originally propagated, posing further threats to crop yields and ecosystem balance.            </p>
+        </div>
+        </div>
+        <div class="col-md-7">
+        <div class="bento-card h-100">
+            <h3>Initiatives
+                <hr>
+            </h3>
+            <p>
+           The effect of different extracts on major mungbean diseases has been a subject of study, with various plant-based solutions showing potential in controlling these diseases. Additionally, the impact of different rates of plant growth promoters (PGP) on disease reactions, insect pest infestations, and the yield potential of mungbean varieties has been observed, revealing that optimal PGP application can improve both plant health and productivity. Moringa water extract, known for its medicinal properties, has also been explored for its potential benefits in crop management. Furthermore, the medicinal properties of invasive plants are being increasingly recognized, with some showing promise in treating various ailments, even as they continue to pose threats to agricultural systems.
+            </p>
+        </div>
+        </div>
     </div>
 
-    <!-- Content Section -->
-    <div class="container">
-        <section class="content-section">
-            <h3>Introduction</h3>
-            <p>
-                Root Crops refers to any plant that is cultivated primarily for its edible, underground root, which stores nutrients for the plant. Root Crops are valuable for their ability to grow in a variety of soil types and climates, and they often provide a reliable food source, especially in areas with challenging growing conditions.
-            </p>
-            <p>Crop management systems account for a significant portion of farmers production costs, with insect pests and diseases being major contributors to yield reduction. The low productivity of crops such as mungbean and peanut further exacerbates these challenges. Additionally, mice often mate less reliably, impacting their populations. Invasive plant species also tend to proliferate in environments where they were not originally propagated, posing further threats to crop yields and ecosystem balance. 
-            </p>
-        </section>
-
-        <section class="content-section">
-            <h3>Initiatives</h3>
-            <p>
-                The effect of different extracts on major mungbean diseases has been a subject of study, with various plant-based solutions showing potential in controlling these diseases. Additionally, the impact of different rates of plant growth promoters (PGP) on disease reactions, insect pest infestations, and the yield potential of mungbean varieties has been observed, revealing that optimal PGP application can improve both plant health and productivity. Moringa water extract, known for its medicinal properties, has also been explored for its potential benefits in crop management. Furthermore, the medicinal properties of invasive plants are being increasingly recognized, with some showing promise in treating various ailments, even as they continue to pose threats to agricultural systems.</p>
-        </section>
-
-        <section class="content-section">
-            <h3>R4D Thrusts and Priorities</h3>
+    <!-- Bottom Row -->
+    <div class="row g-4">
+        <div class="col-md-7">
+        <div class="bento-card h-100">
+            <h3>R4D Thrusts and Priorities
+                <hr>
+            </h3>
             <ul>
-                <li>Medicinal properties of selected invasive plant species</li>
-                <li>Improvement of integrated crop management systems of mungbean</li>
-                <li>Post-harvest handling and storage of root crops</li>
+                <li>Medicinal properties of selected invasive plant species.</li>
+                <li>Improvement of integrated crop management systems of mungbean.</li>
+                <li>Post-harvest handling and storage of root crops.</li>
             </ul>
-        </section>
-
-        <section class="content-section">
-            <h3>Recommendations</h3>
+        </div>
+        </div>
+        <div class="col-md-5">
+        <div class="bento-card h-100">
+            <h3>Recommendations
+                <hr>
+            </h3>
             <ul>
-                <li>It needs to explore more about the medicinal properties of the root crops. Also to research about the carbon sequestration potential of root crops and their role in mitigating climate change. Additionally, to have a database of medicinal properties of invasive plants for the future research/study.  Overall, it also needs to observe and develop on how to improve the quality of the root crops. </li>
+            <li>
+                It needs to explore more about the medicinal properties of the root crops. Also to research about the carbon sequestration potential of root crops and their role in mitigating climate change. Additionally, to have a database of medicinal properties of invasive plants for the future research/study. Overall, it also needs to observe and develop on how to improve the quality of the root crops.
+            </li>
             </ul>
-        </section>
+        </div>
+        </div>
+    </div>
     </div>
 
     <!-- Footer -->
