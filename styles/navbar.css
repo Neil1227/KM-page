@@ -127,10 +127,7 @@
 
 
 
-/* Toggler icon style */
-.navbar-toggler-icon {
-  border: none;
-}
+
 
 /* Animation for Navbar */
 @keyframes slideDown {
@@ -147,7 +144,6 @@
 @media (max-width: 991px) {
   .navbar {
     background-color: var(--primary-color);
-    padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;

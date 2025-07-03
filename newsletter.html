@@ -32,7 +32,7 @@
         <a href="https://www.facebook.com/psau.kmc" class="social-icon" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
         <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="mailto:kmc@psau.edu.ph" class="social-icon"><i class="fas fa-envelope"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kmc@psau.edu.ph" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
       </li>
     </ul>
   </div>
@@ -58,13 +58,15 @@
     </div>
     </nav>
 
-  <!-- Background Video -->
-  <div class="background-container">
-    <video autoplay muted loop>
-      <source src="/assets/videos/Orange Abstract Background YouTube Thumbnail1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
+<!-- Background Image Container -->
+<div class="background-container">
+  <picture>
+    <!-- Optional fallback for browsers that don't support WebP -->
+    <source srcset="./assets/img/logos-bg.webp" type="image/webp">
+    <img src="./assets/img/logos-bg.png" alt="Abstract Background" loading="lazy" class="background-img">
+  </picture>
+    <div class="background-overlay"></div>
+</div>
 
 <!-- PDF Cards -->
 <section class="container my-5">

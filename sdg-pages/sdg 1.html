@@ -1,117 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDG 1: No Poverty</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="path/to/your/sdg1-icon.png" type="image/png">
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f4f7fc;
-            color: #333;
-            line-height: 1.6;
-            padding-top: 60px;
-            text-align: center;
-        }
-        header {
-            background-color: #e5243b;
-            color: white;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 10;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
-            color: rgb(255, 255, 255);
-        }
-        .hero h2 {
-            color: #e5243b;
-        }
-    
-        header h1 { font-size: 1.8rem; }
-        .nav-links { display: flex; gap: 15px; align-items: center; }
-        .nav-links a, .home-button, .dropbtn, .nav-btn {
-            background-color: #ffffff;
-            color: #333;
-            text-decoration: none;
-            font-weight: 20;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-        }
-        
-        .dropdown { position: relative; display: inline-block; }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 200px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 5px;
-            overflow-y: auto;
-            max-height: 300px;
-        }
-        .dropdown:hover .dropdown-content { display: block; }
-        .dropdown-content a {
-            color: #333;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-            .content-section {
-        text-align: justify;
-        margin-top: 2rem;
-        border: 3px solid #e5243b; /* Adds a red border */
-        padding: 70px;
-        border-radius: 10px; /* Rounded corners */
-        background-color: #ffffff; /* Optional: makes text pop */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Optional: soft shadow */
-        }
-        .hero img { width: 100%; max-height: 700px; object-fit: cover; }
-        .content { padding: 20px; max-width: 800px; margin: auto; }
-        .nav-buttons { display: flex; justify-content: space-between; padding: 20px; }
-        footer { background: #e5243b; color: white; padding: 10px; margin-top: 20px; }
-        .content-section {
-            text-align: justify;
-            margin-top: 2rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SDG 1: No Poverty</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'League Spartan';
+      background-color: #f4f7fc;
+      color: #333;
+      line-height: 1.6;
+      padding-top: 80px;
+    }
+
+    header {
+      background-color: #e5243b;
+      color: white;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .home-button {
+      background-color: #fff;
+      color: #e5243b;
+      font-weight: 600;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .home-button:hover {
+      background-color: #e5243b;
+      color: white;
+      border: 1px solid #fff;
+    }
+
+    .hero {
+    text-align: center;
+    padding: 20px 15px;
+    }
+
+    .hero img {
+    width: 100%;
+    max-width: 700px;      /* Limit width */
+    max-height: 250px;     /* Make it thinner */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    }
+
+    .hero h2 {
+    font-size: 1.5rem;
+    color: #e5243b;
+    margin: 0;
+    }
+
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .content-section {
+      background-color: white;
+      border: 3px solid #e5243b;
+      border-radius: 10px;
+      padding: 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: justify;
+    }
+
+    .content-section p {
+      margin-bottom: 20px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 30px;
+    }
+
+    .nav-btn {
+      background-color: #e5243b;
+      color: white;
+      font-weight: 600;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-btn:hover {
+      background-color: #c91f32;
+    }
+
+    footer {
+      background-color: #e5243b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+      }
+
+      .nav-links {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: flex-end;
+      }
+
+      .hero h2 {
+        font-size: 1.4rem;
+      }
+
+      .content-section {
+        padding: 25px;
+      }
+
+      .nav-buttons {
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>SDG 1: No Poverty</h1>
-        <div class="nav-links">
-            <div class="dropdown">
-            <a href="../Homepage.html"><button class="home-button">Home</button></a>
-        </div>
-    </header>  
-    <div class="hero">
-        <img id="sdg-image" src="C:\Users\daryl\Desktop\WEBSITE\sdgs\SDGS banner\SDG BANNER 1.png" alt="SDG 1 Image">
-        <h2>SDG 1: End poverty in all its forms everywhere</h2>
+
+  <header>
+    <h1>SDG 1: No Poverty</h1>
+    <div class="nav-links">
+      <a href="../Homepage.html" class="home-button">Home</a>
     </div>
-    <div class="container">
-        <section class="content-section">
-            <br>
-                Pampanga State Agricultural University (PSAU) stands at the forefront of driving sustainable development, deeply committed to addressing SDG 1: No Poverty through research-driven programs, community empowerment, and agricultural innovations. Guided by its mandate, PSAU continuously explores the effectiveness of its initiatives in tackling poverty, food insecurity, and environmental stability—paving the way for inclusive growth and lasting change.</br>
-            <br>
-                One such study, conducted among local farmers, seeks to assess how well these programs fulfill their intended purpose. By gathering firsthand insights, PSAU identifies gaps, strengths, and areas for improvement, ensuring that interventions truly uplift farming communities. The research highlights practical solutions that enhance agricultural productivity, promote sustainable livelihoods, and build resilience against economic and environmental challenges.</br>
-            <br>
-                Through its continuous commitment to innovation and community engagement, PSAU reinforces its mission of empowering farmers—helping them break free from the cycle of poverty while fostering a more food-secure and sustainable future for all.</br>
-        </section>
+  </header>
+
+  <div class="hero">
+    <img src="../assets/img/sdgs/SDGS-banner/1.png" alt="SDG 1 Banner" />
+    <h2>SDG 1: End poverty in all its forms everywhere</h2>
+  </div>
+
+  <div class="container">
+    <section class="content-section">
+      <p>
+        Pampanga State Agricultural University (PSAU) stands at the forefront of driving sustainable development, deeply committed to addressing SDG 1: No Poverty through research-driven programs, community empowerment, and agricultural innovations. Guided by its mandate, PSAU continuously explores the effectiveness of its initiatives in tackling poverty, food insecurity, and environmental stability—paving the way for inclusive growth and lasting change.
+      </p>
+      <p>
+        One such study, conducted among local farmers, seeks to assess how well these programs fulfill their intended purpose. By gathering firsthand insights, PSAU identifies gaps, strengths, and areas for improvement, ensuring that interventions truly uplift farming communities. The research highlights practical solutions that enhance agricultural productivity, promote sustainable livelihoods, and build resilience against economic and environmental challenges.
+      </p>
+      <p>
+        Through its continuous commitment to innovation and community engagement, PSAU reinforces its mission of empowering farmers—helping them break free from the cycle of poverty while fostering a more food-secure and sustainable future for all.
+      </p>
+    </section>
+
     <div class="nav-buttons">
-        <a href=""></button></a>
-        <a id="next-btn" href="sdg 2.html"><button class="nav-btn">Next</button></a>
+      <!-- You can replace the href with the actual previous page if available -->
+      <a href="#" class="nav-btn">Previous</a>
+      <a id="next-btn" href="sdg 2.html" class="nav-btn" style="margin-left: 10px;">Next</a>
     </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Pampanga State Agricultural University. All Rights Reserved.
+  </footer>
+
 </body>
 </html>

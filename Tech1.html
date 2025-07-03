@@ -7,14 +7,17 @@
   
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/tech1.css">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/tech1.css">
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/homepage.css">
     <link rel="stylesheet" href="./styles/navbar.css">
-  
+  <!-- Add AOS Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <!-- Google Fonts -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- EmailJS SDK -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -38,47 +41,46 @@
         <a href="https://www.facebook.com/psau.kmc" class="social-icon" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
         <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="mailto:kmc@psau.edu.ph" class="social-icon"><i class="fas fa-envelope"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kmc@psau.edu.ph" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
       </li>
     </ul>
   </div>
 </header>
-    <!-- Navbar -->
+
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark " data-aos="fade-down" data-aos-duration="1000"style="position: sticky; top: 0; z-index: 999;">
-  <div class="container-fluid justify-content-center">
+  <div class="container-fluid ">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav text-center">
-            <li class="nav-item"><a class="nav-link text-white" href="Homepage.html">Home</a></li>
+        <li class="nav-item">
+          <a class="nav-link text-white active" href="Homepage.html">Home</a>
+        </li>
             <li class="nav-item dropdown dropdown-hover">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="servicesDropdown" role="button">
-                    Services
-                </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item text-dark" href="PS.html">Plagiarism Scan</a></li>
-                        <li><a class="dropdown-item text-dark" href="PA.html">Promotional Activities</a></li>
-                        <li><a class="dropdown-item text-dark" href="KSA.html">Knowledge Sharing</a></li>
-                    </ul>
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button">
+                Services
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-dark" href="PS.html">Plagiarism Scan</a></li>
+                <li><a class="dropdown-item text-dark" href="PA.html">Promotional Activities</a></li>
+                <li><a class="dropdown-item text-dark" href="KSA.html">Knowledge Sharing</a></li>
+            </ul>
             </li>
-            <li class="nav-item"><a class="nav-link text-white" href="Tech1.html">Technologies</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="tech.html">Technologies</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="Homepage.html#media-resources">Media Resources</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="Homepage.html#research">Research</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="Homepage.html#sdgs">SDGs</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="Homepage.html#about">About</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link text-white active" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
-      <!-- Background Video -->
-  <div class="background-container">
-    <video autoplay muted loop>
-      <source src="./assets/videos/Orange Abstract Background YouTube Thumbnail1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
+
   <!-- Cards -->
   <div class="cards-container">
     <div class="card">
@@ -92,10 +94,55 @@
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; Philippine Copyright 2025 by Pampanga State Agricultural University</p>
-  </footer>
+    <!-- Footer -->
+<footer class="footer-section ">
+  <div class="container">
+    <div class="row">
+      <!-- Column 1: Logos -->
+      <div class="col-md-3 mb-4">
+        <div class="footer-logos d-flex flex-wrap gap-2">
+          <img src="assets/img/iptbm.png" alt="Logo 1" class="footer-logo">
+          <img src="assets/img/kmlogo.png" alt="Logo 2" class="footer-logo">
+          <img src="assets/img/sibultbi-logo.png" alt="Logo 3" class="footer-logo">
+          <img src="assets/img/officeofinnovation.png" alt="Logo 4" class="footer-logo">
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-md-3 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#Homepage" class="text-decoration-none">Home</a></li>
+          <li><a href="#about" class="text-decoration-none">About</a></li>
+          <li><a href="contact.html" class="text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-md-3 mb-4">
+        <h5>Resources</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none">Media</a></li>
+          <li><a href="#" class="text-decoration-none">Publications</a></li>
+          <li><a href="#" class="text-decoration-none">Newsletters</a></li>
+          <li><a href="#" class="text-decoration-none">Modules</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="col-md-3 mb-4">
+        <h5>Contact Us</h5>
+        <p>Pampanga State Agricultural University<br>PAC, San Agustin, Magalang, Pampanga, Philippines</p>
+        <p>Email: kmc@psau.edu.ph</p>
+        <p>Phone: (045) 123-4567</p>
+      </div>
+
+    </div>
+    <div class="row text-center mt-4 pt-3   footer-bottom">
+    <p class="mb-0">&copy; Philippine Copyright 2025 by Pampanga State Agricultural University</p>
+    </div>
+  </div>
+</footer>
 
   <!-- Modal -->
   <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
@@ -112,143 +159,12 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
-  <!-- Main Script -->
+
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const commentList = document.getElementById("commentList");
-      let comments = JSON.parse(localStorage.getItem("comments")) || [];
-
-      function renderComments() {
-        commentList.innerHTML = "";
-        comments.forEach((comment, index) => {
-          let commentElement = document.createElement("div");
-          commentElement.classList.add("comment");
-
-          commentElement.innerHTML = `
-            <strong>${comment.name}</strong>
-            <p>${comment.text}</p>
-            <button class="reply-btn btn btn-sm btn-outline-primary mb-2" data-index="${index}">Reply</button>
-            <div class="replies" id="replies-${index}">
-              ${comment.replies ? comment.replies.map(reply => `
-                <div class="reply">
-                  <strong>${reply.name}</strong>: ${reply.text}
-                </div>
-              `).join('') : ''}
-            </div>
-          `;
-
-          commentList.prepend(commentElement);
-        });
-
-        addReplyListeners();
-      }
-
-      function addReplyListeners() {
-        const replyButtons = document.querySelectorAll(".reply-btn");
-        replyButtons.forEach(button => {
-          button.addEventListener("click", function () {
-            const index = this.getAttribute("data-index");
-            const repliesDiv = document.getElementById(`replies-${index}`);
-
-            if (repliesDiv.querySelector(".reply-form")) return;
-
-            const form = document.createElement("form");
-            form.classList.add("reply-form", "mt-2");
-
-            form.innerHTML = `
-              <input type="text" class="form-control mb-2" placeholder="Your Name" required>
-              <textarea class="form-control mb-2" placeholder="Your Reply" rows="2" required></textarea>
-              <button type="submit" class="btn btn-sm btn-primary">Submit Reply</button>
-            `;
-
-            form.addEventListener("submit", function (event) {
-              event.preventDefault();
-              const name = form.querySelector("input").value.trim();
-              const text = form.querySelector("textarea").value.trim();
-
-              if (name && text) {
-                if (!comments[index].replies) comments[index].replies = [];
-                comments[index].replies.push({ name, text });
-
-                localStorage.setItem("comments", JSON.stringify(comments));
-                renderComments();
-              }
-            });
-
-            repliesDiv.appendChild(form);
-          });
-        });
-      }
-
-      document.getElementById("commentForm").addEventListener("submit", function (event) {
-        event.preventDefault();
-        let name = document.getElementById("name").value.trim();
-        let text = document.getElementById("comment").value.trim();
-
-        if (name && text) {
-          comments.push({ name, text, replies: [] });
-          localStorage.setItem("comments", JSON.stringify(comments));
-          renderComments();
-          document.getElementById("commentForm").reset();
-
-          // Send email notification via EmailJS
-          emailjs.send('service_43yjq7r', 'service_fyu6f01', {
-            name: name,
-            comment: text
-          }).then(function(response) {
-            console.log('Email sent!', response.status, response.text);
-          }, function(error) {
-            console.error('Failed to send email:', error);
-          });
-        }
-      });
-
-      renderComments();
-    });
-
-    const images = Array.from(document.querySelectorAll(".card img"));
-    let currentIndex = 0;
-    let modalInstance = null;
-
-    function openModal(imgElement) {
-      currentIndex = images.indexOf(imgElement);
-      showImage();
-      modalInstance = new bootstrap.Modal(document.getElementById("imageModal"));
-      modalInstance.show();
-    }
-
-    function showImage() {
-      const modalImage = document.getElementById("modalImage");
-      modalImage.src = images[currentIndex].src;
-    }
-
-    document.getElementById("prevBtn").addEventListener("click", () => {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      showImage();
-    });
-
-    document.getElementById("nextBtn").addEventListener("click", () => {
-      currentIndex = (currentIndex + 1) % images.length;
-      showImage();
-    });
-
-    document.addEventListener("keydown", function (event) {
-      const modal = document.getElementById("imageModal");
-      if (!modal.classList.contains("show")) return;
-
-      if (event.key === "ArrowRight") {
-        currentIndex = (currentIndex + 1) % images.length;
-        showImage();
-      } else if (event.key === "ArrowLeft") {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        showImage();
-      } else if (event.key === "Escape") {
-        const modalInstance = bootstrap.Modal.getInstance(document.getElementById("imageModal"));
-        if (modalInstance) modalInstance.hide();
-      }
-    });
-  </script>
+  AOS.init();
+</script>
 
 </body>
 </html>
