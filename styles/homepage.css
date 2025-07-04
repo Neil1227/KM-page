@@ -25,6 +25,8 @@
 
 .video-banner {
     width: 100%;
+    height: auto;
+    display: block;
     aspect-ratio: 21 / 7; /* Cinematic ratio */
     position: relative;
     overflow: hidden;
@@ -52,32 +54,6 @@
   z-index: 1;
 }
 
-.floating-socials {
-  position: fixed;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  background-color:var(--primary-color); /* dark blue with opacity */
-  padding: 10px 10px 10px 0px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  z-index: 2;
-  gap: 15px;
-  transition: transform 0.3s ease;
-}
-
-.floating-socials a {
-  color: white;
-  font-size: 1.3rem;
-  text-align: center;
-  transition: color 0.3s ease;
-}
-
-.floating-socials a:hover {
-  color: var(--secondary-color); /* optional hover color */
-}
 
 
 /* media section--------------------------------------------------------------------- */

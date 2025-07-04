@@ -11,6 +11,18 @@
     --btn-hover-gold:rgb(255, 123, 0);
 }
 
+
+/* Do this instead */
+* {
+  box-sizing: border-box;
+}
+
+
+.container-fluid,
+.row {
+  overflow-x: hidden;
+}
+
 body {
     margin: 0;
     font-family: var(--main-font);
