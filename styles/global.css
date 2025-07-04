@@ -17,13 +17,12 @@
   box-sizing: border-box;
 }
 
-
-.container-fluid,
 .row {
   overflow-x: hidden;
 }
 
 body {
+    overflow-x: hidden; /* Prevent horizontal scrollbars from appearing */
     margin: 0;
     font-family: var(--main-font);
 }
@@ -116,7 +115,7 @@ body {
 /* Smooth dropdown appearance on mobile */
 @media (max-width: 991px) {
 .container-page {
-  padding: 0px 50px;
+  padding: 0px 20px;
 }
 }
 
