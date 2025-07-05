@@ -77,7 +77,12 @@ body {
   }
   
 }
-
+.read-more {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: var(--complementary-color);
+}
 .hr {
   border: none;
   border-top: 2px solid var(--primary-color); /* 4px thick black line */

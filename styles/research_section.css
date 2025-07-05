@@ -1,0 +1,116 @@
+/* === CARD CONTAINER === */
+.container .row {
+  margin: 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* === CARD COLUMN === */
+.container .col-md-3 {
+  padding: 0 !important;
+  display: flex;
+}
+.card-body,
+.card-title,
+.card-texts,
+.read-more {
+  text-align: start ;
+}
+.card-body .card-texts{
+    color: var(--gray-complement);
+}
+
+/* === CARD === */
+.new_research-card {
+  background-color: transparent;
+  color: var(--primary-color);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  height: 140px; /* increased thickness */
+}
+
+/* === INNER FLEX WRAPPER === */
+.new_research-card .d-flex {
+  padding: 20px; /* thicker padding */
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
+/* === HOVER === */
+.new_research-card:hover {
+  background-color: #f85e0a;
+  transform: translateY(-2px);
+}
+
+.new_research-card:hover .card-title,
+.new_research-card:hover .card-texts,
+.new_research-card:hover .read-more {
+  color: white !important;
+}
+
+.new_research-card:hover .icon-img-research {
+  filter: brightness(0) invert(1);
+}
+
+/* === IMAGE ICON === */
+.icon-img-research {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+/* === TEXT === */
+.card-body {
+  padding: 0;
+  flex-grow: 1;
+  text-align: start;
+}
+
+.card-title,
+.card-texts,
+.read-more {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+/* === LINK === */
+a.text-decoration-none {
+  display: block;
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  .new_research-card {
+    height: auto;
+  }
+
+  .new_research-card .d-flex {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .card-body .card-title .card-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+.card-body,
+.card-title,
+.card-texts,
+.read-more {
+  text-align: center ;
+}
+  .icon-img-research {
+    margin: 0 0 12px 0;
+  }
+}
+
+
