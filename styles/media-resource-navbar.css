@@ -1,6 +1,6 @@
 .navbar {
     position: sticky;
-    font-size: 1.2rem;
+    font-size: 1rem;
     top: 0; 
     z-index: 1030;
     background: linear-gradient(90deg, #ff6a00, #ffb940);
@@ -149,7 +149,7 @@
   }
 
   .navbar-nav .nav-link {
-    font-size: 1rem;
+    font-size: .9rem;
     padding: 10px;
   }
 
