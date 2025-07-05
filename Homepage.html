@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./styles/homepage.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/global.css">
+    <!-- added the research.css for the bg container or research section  -->
+    <link rel="stylesheet" href="./styles/research.css">
       <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Add AOS Library -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -44,10 +46,19 @@
     <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark " data-aos="fade-down" data-aos-duration="1000"style="position: sticky; top: 0; z-index: 999;">
   <div class="container-fluid justify-content-center">
+
+    <!-- LOGO -->
+    <div class="navbar-logo d-lg-none">
+      <!-- <img src="./assets/img/kmlogo.png" alt="Logo" class="mobile-logo"> -->
+    <h3 class="logo-text text-white">Knowledge Management Unit</h3>
+    </div>
+
+    <!-- TOGGLER BUTTON -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav text-center">
             <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
@@ -73,7 +84,7 @@
 </nav>
 
 <section class="video-banner" data-aos="fade-down" data-aos-duration="1500">
-  <video autoplay muted loop playsinline preload="auto">
+    <video autoplay muted loop playsinline preload="auto" width="80%" height="300" style="border: 0;">
     <source src="./assets/videos/compressed_homebanner.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
