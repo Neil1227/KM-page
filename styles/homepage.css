@@ -1,7 +1,3 @@
-/* every page */
-.container-page {
-    padding: 0 200px 0 200px;
-}
 
 @media (max-width: 1100px) {
   .container-page {
@@ -272,41 +268,74 @@ color: var(--gray-complement);
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
-
-
-/* footer------------------------------------------------ */
-.footer-section {
-  background-color: var(--gray-complement);
-  color: var(--white-text);
-  padding: 40px 20px;
-  font-size: 1rem;
+.custom-footer-section {
+  background: rgba(200, 200, 200, 0.3); /* light gray with transparency */
+  color: #1a1a1a; /* dark text for contrast */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.list-unstyled a {
-  color: var(--white-text); /* Light text, works well on dark backgrounds */
-  font-size: 0.95rem;
+.custom-footer-title {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid var(--primary-color);
+  display: inline-block;
+  padding-bottom: 5px;
+  color: #333;
+}
+
+.custom-footer-links li {
+  margin-bottom: 10px;
+}
+
+.custom-footer-links a {
+  color: #333;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.footer-logos {
+.custom-footer-links a:hover {
+  color: var(--primary-color);
+}
+
+.custom-footer-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.custom-footer-logos {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: flex-start;
 }
 
-.footer-logo {
-  width: 110px;
-  height: auto;
+.custom-footer-logo {
+  width: 75px;
+  height: 75px;
   object-fit: contain;
-  padding: 5px;
-  border-radius: 5px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.6); /* light background behind logos */
+  padding: 6px;
+  transition: transform 0.3s ease;
 }
-.footer-bottom {
-  background-color: #808080; /* dark blue */
-  color: #fff;
-  padding: 15px 0;
-  font-size: 0.9rem;
+
+.custom-footer-logo:hover {
+  transform: scale(1.05);
 }
+
+.custom-footer-bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.85rem;
+  color: #444;
+  text-align: center;
+}
+
+
 
 
 @keyframes slideDown {
