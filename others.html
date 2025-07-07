@@ -73,13 +73,36 @@
     <div class="row g-4 mb-4">
         <div class="col-12">
         <div class="bento-card h-100">
-            <h3>Introduction 
-                <hr>
-            </h3>
+
+        <div class="research-card">
+          <div class="research-image">
+
+            <picture>
+              <!-- WebP version for modern browsers -->
+              <source srcset="./assets/img/research_thumbnail/others.webp" type="image/webp">
+              
+              <!-- Fallback PNG version -->
+              <source srcset="./assets/img/research_thumbnail/others.png" type="image/png">
+              
+              <!-- Actual image element with lazy loading -->
+              <img 
+                src="./assets/img/research_thumbnail/others.png" 
+                alt="Modern agriculture" 
+                loading="lazy"
+                width="100%"
+                height="auto"
+                style="display: block; object-fit: cover; border-radius: 10px;"
+              >
+            </picture>
+
+          </div>
+          <div class="research-text">
+            <h3>Helping Local Communities Recover and Thrive <hr> </h3>
             <p>
                 Commercially available stoves for briquettes are often not suitable for the biomass briquettes produced at PSAU. Additionally, the COVID-19 pandemic had a significant impact on the ecotourism sector in the SPCW, leading to a decline in visitor numbers, disruption of local livelihoods, and a negative effect on environmental sustainability.
            </p>
-
+          </div>
+        </div>
             <h3>Initiatives 
                 <hr>
             </h3>
