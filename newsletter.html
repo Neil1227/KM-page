@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/newsletter.css">
-    <link rel="stylesheet" href="./styles/research.css">
-  <link rel="stylesheet" href="/styles/global.css">
+  <link rel="stylesheet" href="./styles/research.css">
+  <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/media-resource-navbar.css">
 
 </head>
@@ -17,7 +17,7 @@
 
 <div class="background-container">
   <video autoplay muted loop>
-    <source src="/videos/background.mp4" type="video/mp4">
+    <source src="./videos/background.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
@@ -33,34 +33,34 @@
         <a href="https://www.facebook.com/psau.kmc" class="social-icon" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
         <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kmc@psau.edu.ph" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
+        <a href="mailto:kmc@psau.edu.ph" class="social-icon"><i class="fas fa-envelope"></i></a>
       </li>
     </ul>
   </div>
 </header>
 
-      <!-- Navbar -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid "> 
-          <div class="navbar-logo d-lg-none">
-      <h3 class="logo-text">Newsletters</h3>        
-    </div><!-- center content -->
+      <div class="container-fluid"> <!-- center content -->
+            <div class="navbar-logo d-lg-none">
+      <h3 class="logo-text">Newsletter</h3>        
+    </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav text-center">
             <li class="nav-item"><a class="nav-link text-white" href="Homepage.html#media-resources">Home</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="ictv.html">ICTV</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="iec.html">IEC Materials</a></li>
+            <li class="nav-item"><a class="nav-link text-white " href="iec.html">IEC Materials</a></li>
             <li class="nav-item"><a class="nav-link text-white active" href="newsletter.html">Newsletter</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="modules.html">Modules</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="tech portfolio.html">Tech Portfolio</a></li>
         </ul>
         </div>
     </div>
-    </nav>
+  </nav>
 
 <!-- Background Image Container -->
 <div class="background-container">
@@ -73,102 +73,194 @@
 </div>
 
 <!-- PDF Cards -->
-<section class="container my-5">
+<section class="container-page my-5">
   <div class="row g-4">
     <div class="col-md-6 col-lg-4">
-      <div class="pdf-card view-btn" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="./assets/files/NEWS_IPTBM In Focus, Volume 1, Issue 1.pdf">
-        <iframe src="./assets/files/NEWS_IPTBM In Focus, Volume 1, Issue 1.pdf"></iframe>
-      </div>
+      <a href="./assets/files/NEWS_IPTBM In Focus, Volume 1, Issue 1.pdf" target="_blank" class="text-decoration-none">
+        <div class="pdf-card">
+            <img src="./assets/img/newsletter_thumbnail/NEWS_IPTBM In Focus, Volume 1, Issue 1.png"
+                alt="Preview of Newsletter"
+                loading="lazy"
+                class="img-fluid">
+          <div class="card-body text-center mt-2">
+            <h6>NEWS IPTBM Vol 1, Issue 1</h6>
+            <small>Click to open PDF</small>
+          </div>
+        </div>
+      </a>
     </div>
 
-    <!-- PDF 2 -->
     <div class="col-md-6 col-lg-4">
-      <div class="pdf-card view-btn" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="./assets/files/NEWS_Issue 2 Quarter 2 Final.pdf">
-        <iframe src="./assets/files/NEWS_Issue 2 Quarter 2 Final.pdf"></iframe>
-      </div>
+      <a href="./assets/files/NEWS_Issue2_Quarter2_Final.pdf" target="_blank" class="text-decoration-none">
+        <div class="pdf-card">
+            <img src="./assets/img/newsletter_thumbnail/NEWS_Issue 2 Quarter 2 Final.png"
+                alt="Preview of Newsletter"
+                loading="lazy"
+                class="img-fluid">
+          <div class="card-body text-center mt-2">
+            <h6>NEWS Issue 2 Quarter 2</h6>
+            <small>Click to open PDF</small>
+          </div>
+        </div>
+      </a>
     </div>
 
-    <!-- PDF 3 -->
     <div class="col-md-6 col-lg-4">
-      <div class="pdf-card view-btn" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="./assets/files/NEWS_IP-TBM in Focus (V2,Q1) (1).pdf">
-        <iframe src="./assets/files/NEWS_IP-TBM in Focus (V2,Q1) (1).pdf"></iframe>
-      </div>
+      <a href="./assets/files/assets/files/NEWS_IP-TBM_in_Focus_(V2,Q1).pdf" target="_blank" class="text-decoration-none">
+        <div class="pdf-card">
+            <img src="./assets/img/newsletter_thumbnail/NEWS_IP-TBM in Focus (V2,Q1) (1).png"
+                alt="Preview of Newsletter"
+                loading="lazy"
+                class="img-fluid">
+          <div class="card-body text-center mt-2">
+            <h6>NEWS IP-TBM in Focus (V2,Q1)</h6>
+            <small>Click to open PDF</small>
+          </div>
+        </div>
+      </a>
+    </div>
+<!-- newspaper -->
+    <div class="col-md-6 col-lg-4">
+      <a href="./assets/files/NEWS_IP-TBM in Focus (V2,Q2)..pdf" target="_blank" class="text-decoration-none">
+        <div class="pdf-card">
+            <img src="./assets/img/newsletter_thumbnail/NEWS_IP-TBM in Focus (V2,Q2).png"
+                alt="Preview of Newsletter"
+                loading="lazy"
+                class="img-fluid">
+          <div class="card-body text-center mt-2">
+            <h6>NEWS_IP-TBM in Focus (V2,Q2)</h6>
+            <small>Click to open PDF</small>
+          </div>
+        </div>
+      </a>
+    </div>
+<!-- newspaper -->
+    <div class="col-md-6 col-lg-4">
+      <a href="./assets/files/NEWS_IP-TBM in Focus (V2,Q3)....pdf" target="_blank" class="text-decoration-none">
+        <div class="pdf-card">
+            <img src="./assets/img/newsletter_thumbnail/NEWS_IP-TBM in Focus (V2,Q3).png"
+                alt="Preview of Newsletter"
+                loading="lazy"
+                class="img-fluid">
+          <div class="card-body text-center mt-2">
+            <h6>NEWS_IP-TBM in Focus (V2,Q3)</h6>
+            <small>Click to open PDF</small>
+          </div>
+        </div>
+      </a>
+    </div>
+<!-- newspaper -->
+    <div class="col-md-6 col-lg-4">
+      <a href="./assets/files/NEWS_Innovation In Focus Q4.pdf" target="_blank" class="text-decoration-none">
+        <div class="pdf-card">
+            <img src="./assets/img/newsletter_thumbnail/NEWS_Innovation In Focus Q4.png"
+                alt="Preview of Newsletter"
+                loading="lazy"
+                class="img-fluid">
+          <div class="card-body text-center mt-2">
+            <h6>NEWS_Innovation In Focus Q4</h6>
+            <small>Click to open PDF</small>
+          </div>
+        </div>
+      </a>
+    </div>
+<!-- newspaper -->
+    <div class="col-md-6 col-lg-4">
+      <a href="./assets/files/NEWS_Innovation In Focus Q1.pdf" target="_blank" class="text-decoration-none">
+        <div class="pdf-card">
+            <img src="./assets/img/newsletter_thumbnail/NEWS_Innovation In Focus Q1.png"
+                alt="Preview of Newsletter"
+                loading="lazy"
+                class="img-fluid">
+          <div class="card-body text-center mt-2">
+            <h6>NEWS_Innovation In Focus Q1</h6>
+            <small>Click to open PDF</small>
+          </div>
+        </div>
+      </a>
+    </div>
+<!-- newspaper -->
+    <div class="col-md-6 col-lg-4">
+      <a href="./assets/files/NEWS_Innovation In Focus Q3.pdf" target="_blank" class="text-decoration-none">
+        <div class="pdf-card">
+            <img src="./assets/img/newsletter_thumbnail/NEWS_Innovation In Focus Q3.png"
+                alt="Preview of Newsletter"
+                loading="lazy"
+                class="img-fluid">
+          <div class="card-body text-center mt-2">
+            <h6>NEWS_Innovation In Focus Q3</h6>
+            <small>Click to open PDF</small>
+          </div>
+        </div>
+      </a>
+    </div>
+<!-- newspaper -->
+    <div class="col-md-6 col-lg-4">
+      <a href="./assets/files/NEWS_FINAL Q4.pdf" target="_blank" class="text-decoration-none">
+        <div class="pdf-card">
+            <img src="./assets/img/newsletter_thumbnail/NEWS_FINAL Q4.png"
+                alt="Preview of Newsletter"
+                loading="lazy"
+                class="img-fluid">
+          <div class="card-body text-center mt-2">
+            <h6>NEWS_IPTBM in Focus Q4</h6>
+            <small>Click to open PDF</small>
+          </div>
+        </div>
+      </a>
+    </div>
+<!-- newspaper -->
+    <div class="col-md-6 col-lg-4">
+      <a href="./assets/files/NEWS_FINAL_2025 In Focus Q1.pdf" target="_blank" class="text-decoration-none">
+        <div class="pdf-card">
+            <img src="./assets/img/newsletter_thumbnail/NEWS_FINAL_2025 In Focus Q1.png"
+                alt="Preview of Newsletter"
+                loading="lazy"
+                class="img-fluid">
+          <div class="card-body text-center mt-2">
+            <h6>NEWS_FINAL_2025 In Focus Q1</h6>
+            <small>Click to open PDF</small>
+          </div>
+        </div>
+      </a>
+    </div>
+<!-- newspaper -->
+    <div class="col-md-6 col-lg-4">
+      <a href="./assets/files/NEWS_IPTBM In Focus (Q3).pdf" target="_blank" class="text-decoration-none">
+        <div class="pdf-card">
+            <img src="./assets/img/newsletter_thumbnail/NEWS_IPTBM In Focus (Q3).png"
+                alt="Preview of Newsletter"
+                loading="lazy"
+                class="img-fluid">
+          <div class="card-body text-center mt-2">
+            <h6>NEWS_IPTBM In Focus (Q3)</h6>
+            <small>Click to open PDF</small>
+          </div>
+        </div>
+      </a>
+    </div>
+<!-- newspaper -->
+    <div class="col-md-6 col-lg-4">
+      <a href="./assets/files/NEWS_IP-TBM (V2,Q4).pdf" target="_blank" class="text-decoration-none">
+        <div class="pdf-card">
+            <img src="./assets/img/newsletter_thumbnail/NEWS_IPTBM_(V2,Q4).png"
+                alt="Preview of Newsletter"
+                loading="lazy"
+                class="img-fluid">
+          <div class="card-body text-center mt-2">
+            <h6>NEWS_IPTBM_(V2,Q4)</h6>
+            <small>Click to open PDF</small>
+          </div>
+        </div>
+      </a>
     </div>
 
-    <!-- PDF 4 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="pdf-card view-btn" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="./assets/files/NEWS_IP-TBM in Focus (V2,Q2)..pdf">
-        <iframe src="./assets/files/NEWS_IP-TBM in Focus (V2,Q2)..pdf"></iframe>
-      </div>
-    </div>
 
-    <!-- PDF 5 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="pdf-card view-btn" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="./assets/files/NEWS_IP-TBM in Focus (V2,Q3)....pdf">
-        <iframe src="./assets/files/NEWS_IP-TBM in Focus (V2,Q3)....pdf"></iframe>
-      </div>
-    </div>
-
-    <!-- PDF 6 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="pdf-card view-btn" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="./assets/files/NEWS_Innovation In Focus Q4.pdf">
-        <iframe src="./assets/files/NEWS_Innovation In Focus Q4.pdf"></iframe>
-      </div>
-    </div>
-
-    <!-- PDF 7 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="pdf-card view-btn" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="./assets/files/NEWS_Innovation In Focus Q1.pdf">
-        <iframe src="./assets/files/NEWS_Innovation In Focus Q1.pdf"></iframe>
-      </div>
-    </div>
-
-    <!-- PDF 8 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="pdf-card view-btn" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="./assets/files/NEWS_Innovation In Focus Q3.pdf">
-        <iframe src="./assets/files/NEWS_Innovation In Focus Q3.pdf"></iframe>
-      </div>
-    </div>
-
-    <!-- PDF 9 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="pdf-card view-btn" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="./assets/files/NEWS_Innovation In Focus Q4.pdf">
-        <iframe src="./assets/files/NEWS_Innovation In Focus Q4.pdf"></iframe>
-      </div>
-    </div>
-
-    <!-- PDF 10 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="pdf-card view-btn" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="./assets/files/NEWS_FINAL Q4.pdf">
-        <iframe src="./assets/files/NEWS_FINAL Q4.pdf"></iframe>
-      </div>
-    </div>
-
-    <!-- PDF 11 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="pdf-card view-btn" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="./assets/files/NEWS_FINAL_2025 In Focus Q1.pdf">
-        <iframe src="./assets/files/NEWS_FINAL_2025 In Focus Q1.pdf"></iframe>
-      </div>
-    </div>
   </div>
 </section>
 
 
 
-<!-- PDF Modal -->
-<div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Newsletter Viewer</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <iframe id="pdfViewer" src="" width="100%" height="625px" style="border: none;"></iframe>
-      </div>
-    </div>
-  </div>
-</div>
 
 <footer>
   <p>&copy; Philippine Copyright 2025 by Pampanga State Agricultural University</p>
@@ -176,19 +268,13 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-  const pdfModal = document.getElementById('pdfModal');
-  const pdfViewer = document.getElementById('pdfViewer');
-
-  document.querySelectorAll('.view-btn').forEach(card => {
-    card.addEventListener('click', function () {
-      const pdfUrl = this.getAttribute('data-pdf');
-      pdfViewer.src = pdfUrl;
-    });
+document.querySelectorAll('.view-btn').forEach(btn => {
+  btn.addEventListener('click', function () {
+    const pdfPath = this.getAttribute('data-pdf');
+    document.getElementById('pdfViewer').src = pdfPath;
   });
+});
 
-  pdfModal.addEventListener('hidden.bs.modal', () => {
-    pdfViewer.src = '';
-  });
 </script>
 
 </body>

@@ -102,12 +102,12 @@ a.text-decoration-none {
     text-align: center;
   }
   
-.card-body,
-.card-title,
-.card-texts,
-.read-more {
-  text-align: center ;
-}
+  .card-body,
+  .card-title,
+  .card-texts,
+  .read-more {
+    text-align: center ;
+  }
   .icon-img-research {
     margin: 0 0 12px 0;
   }
